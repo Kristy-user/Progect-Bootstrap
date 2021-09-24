@@ -1,0 +1,44 @@
+.features_item {
+  & h3 {
+    @include font(14px, 1.2, 700);
+    text-transform: uppercase;
+    color: #2d3033;
+    padding: 28px 0;
+  }
+  & p {
+    @include font(14px, 1.5, 400);
+    color: #6c7279;
+  }
+}
+
+.features_icon {
+  width: 80px;
+  height: 70px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.icon1 {
+  background-image: url(../../img/icon/icon_1.svg);
+  background-size: 60px 60px;
+}
+.icon2 {
+  background-image: url(../../img/icon/icon_2.svg);
+  background-size: 73px 60px;
+}
+.icon3 {
+  background-image: url(../../img/icon/icon_3.svg);
+  background-size: 41px 60px;
+}
+.icon4 {
+  background-image: url(../../img/icon/icon_4.svg);
+  background-size: 56px 60px;
+}
+.icon5 {
+  background-image: url(../../img/icon/icon_5.svg);
+  background-size: 72px 60px;
+}
+.icon6 {
+  background-image: url(../../img/icon/icon_6.svg);
+  background-size: 79px 60px;
+}

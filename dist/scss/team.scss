@@ -1,0 +1,48 @@
+.team_cards_pii {
+  & h3 {
+    @include font(22px, 1.2, 400);
+    color: #2d3033;
+  }
+  & p {
+    @include font(13px, 1.2, 400);
+    text-transform: uppercase;
+    color: #e84545;
+  }
+}
+.team_cards_social_list {
+  display: flex;
+  align-content: center;
+}
+.team_cards_social_list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 16px;
+  color: #c6cacc;
+  border: 1px solid #e8ecee;
+  width: 40px;
+  height: 40px;
+  margin-right: 4px;
+
+  & a {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.team_cards_description_text {
+  @include font(14px, 21px, 400);
+  color: #6c7279;
+
+  margin-right: 2px;
+}
+@media (max-width: $md) {
+  .team_cards_item {
+    width: 50% !important;
+  }
+  .team_cards_description_text {
+    font-size: 16px;
+    padding-right: 5px;
+  }
+}

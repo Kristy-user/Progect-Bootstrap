@@ -1,0 +1,14 @@
+body {
+  font-family: "Raleway";
+  line-height: 1;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../../img/Layer_1.png) !important;
+  color: rgba(255, 255, 255, 0.75);
+}

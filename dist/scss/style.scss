@@ -1,0 +1,30 @@
+@mixin font($s, $l, $w) {
+  font-size: $s;
+  line-height: $l;
+  font-weight: $w;
+}
+
+$color_1: #e84545;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+
+@import 'nullstyle.scss';
+@import 'header.scss';
+@import 'features.scss';
+@import 'works.scss';
+@import 'team.scss';
+@import 'clients';
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+a {
+  color: inherit !important;
+}
