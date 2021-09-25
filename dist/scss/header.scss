@@ -35,14 +35,14 @@
   }
 }
 
+.link_1 {
+  background-color: $color_1;
+  border-radius: 1px;
+  border: 1px solid $color_1;
+  padding: 15px 55px;
+  @include font(13px, 161%, 400);
+}
 .header_link {
-  & .link_1 {
-    background-color: $color_1;
-    border-radius: 1px;
-    border: 1px solid $color_1;
-    padding: 15px 55px;
-    @include font(13px, 161%, 400);
-  }
   padding-bottom: 107px;
 }
 
@@ -59,7 +59,7 @@
 @media (max-width: $md) {
   .header_title {
     & h1 {
-      @include font(35px, 1.2, 700);
+      @include font(28px, 1.2, 700);
     }
     & p {
       @include font(18px, 111%, 400);

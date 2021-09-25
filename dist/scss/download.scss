@@ -1,0 +1,33 @@
+.download_title {
+  & h2 {
+    @include font(28px, 21px, 300);
+    color: #2d3033;
+  }
+  & p {
+    @include font(13px, 21px, 700);
+    text-transform: uppercase;
+    color: #2d3033;
+  }
+}
+.download_link {
+  text-transform: uppercase;
+  color: #ffffff;
+  & a {
+    padding: 16px 81px;
+  }
+}
+@media (max-width: $md) {
+  .download_title {
+    & h2 {
+      @include font(26px, 1.2, 300);
+    }
+    & p {
+      @include font(14px, 1.2, 700);
+      color: inherit;
+    }
+  }
+
+  .download_link a {
+    padding: 13px 40px;
+  }
+}
