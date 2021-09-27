@@ -10,7 +10,7 @@
   text-align: left;
   color: #fff;
   text-align: left;
-  height: fit-content;
+  max-height: 60%;
   & p {
     @include font(calc(16px + 18 * (100vw / 1700)), 1.3, 400);
     font-family: 'Cardo', serif;
@@ -28,3 +28,8 @@
     width: 100%;
   }
 }
+/*@media (max-width: 380px) {
+  .carousel-indicators {
+    display: none;
+  }
+}*/

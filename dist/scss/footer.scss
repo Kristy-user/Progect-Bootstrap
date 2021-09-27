@@ -20,8 +20,7 @@
     color: #808080;
 
     & .footer_copyright_text_1 {
-      font-family: Webdings;
-      color: #e84545;
+      color: $color_1;
     }
     & .footer_copyright_text_2 {
       color: #ffffff;
@@ -51,8 +50,16 @@
     width: 100%;
   }
 }
-@media (max-width: $md) {
+@media (max-width: 575px) {
   .footer_top_contain {
-    display: none;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .footer_top_location,
+  .footer_top_social,
+  .footer_top_about {
+    width: 60%;
+    padding-bottom: 20px;
   }
 }

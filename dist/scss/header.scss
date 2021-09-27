@@ -1,11 +1,13 @@
 .header {
-  background-image: url(../../img/Layer_1.png);
+  background-image: url(../img/Layer_1.png);
   background-size: cover;
   color: rgb(255, 255, 255, 0.75);
   text-transform: uppercase;
 }
-
-.header_top_menu {
+.bg-blue {
+  background-image: url(../img/Layer_1.png);
+}
+.header_top_menu a {
   @include font(13px, 161%, 400);
   color: rgba(255, 255, 255, 0.74);
 }
@@ -56,6 +58,31 @@
     }
   }
 }
+
+@media (min-width: 992px) {
+  .offcanvas {
+    visibility: visible;
+    position: relative;
+    background: none;
+    border: none;
+    justify-content: end;
+  }
+}
+
+@media (max-width: 992px) {
+  .header_top_menu a {
+    @include font(20px, 121%, 400);
+  }
+  .offcanvas {
+    width: 250px !important;
+  }
+  .offcanvas-start-lg {
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+  }
+}
 @media (max-width: $md) {
   .header_title {
     & h1 {
@@ -64,8 +91,5 @@
     & p {
       @include font(18px, 111%, 400);
     }
-  }
-  .header_top_menu {
-    @include font(24px, 161%, 400);
   }
 }

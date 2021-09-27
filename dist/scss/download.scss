@@ -16,13 +16,13 @@
     padding: 16px 81px;
   }
 }
-@media (max-width: $md) {
+@media (max-width: 767px) {
   .download_title {
     & h2 {
       @include font(26px, 1.2, 300);
     }
     & p {
-      @include font(14px, 1.2, 700);
+      @include font(14px, 1.2, 300);
       color: inherit;
     }
   }
